@@ -1,0 +1,21 @@
+{
+  "name": "Youtube feed Blocker",
+  "description": "Removing the feed and comments from the youtube to stop wasting time",
+  "icons": {"128": "icon.png"},
+  "version": "1.0",
+  "permissions": [
+      "tabs", "http://*.youtube.com/*", "https://*.youtube.com/*"
+  ],
+  "browser_action": {
+      "default_title": "Removed the recommended videos sections",
+      "default_icon": "icon.png"
+  },
+    "content_scripts": [{
+        "css": ["style.css"],
+        "matches": ["*://www.youtube.com/", "*://www.youtube.com/watch*", "*://www.youtube.com/*", "*://www.youtube.com/user*"],
+        "all_frames": true,
+        "run_at": "document_start"
+    }],
+
+  "manifest_version": 2
+}

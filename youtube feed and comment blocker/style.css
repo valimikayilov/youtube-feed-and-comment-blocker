@@ -1,0 +1,26 @@
+#feed-main-what_to_watch {
+    display:none;
+}
+
+#branded-page-v2-secondary-col {
+    display: none;
+}
+
+#watch7-sidebar-modules {
+    display: none;
+}
+
+#related {
+	display: none;
+}
+
+#dismissable.ytd-shelf-renderer {
+	display: none;
+}
+
+.videowall-endscreen {
+    display: none;
+}
+#sections.ytd-comments{
+  display:none;
+}
